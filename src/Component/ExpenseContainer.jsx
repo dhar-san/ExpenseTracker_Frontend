@@ -41,7 +41,7 @@ async function getExpense() {
   },[])
 
   async function deleteExpense(id) {
-    await fetch(`https://expensetracker-backend-u7qk.onrender.com /delete/${id}`, {
+    await fetch(`https://expensetracker-backend-u7qk.onrender.com/delete/${id}`, {
       method: "DELETE"
     });
     getExpense();
